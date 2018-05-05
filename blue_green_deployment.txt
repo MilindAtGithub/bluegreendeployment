@@ -1,0 +1,2 @@
+docker run -p 9080:8090 --name my-custom-nginx-container -v /Users/tavant/milind/nginxpoc/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+docker kill --signal=HUP my-custom-nginx-container
